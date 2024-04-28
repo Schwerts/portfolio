@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/R.svg" />
+
+  <!-- Put your site title here -->
+  <title>
+    Ronald Andrew Panganiban | A Web Developer based in Cabanatuan City.
+  </title>
+
+  <meta name="description" content="Add small description of yourslef.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Put your name, skills and some coding keywords" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+  <header class="header" role="banner" id="top">
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="#educ" class="nav__link">Certificates</a></li>
+          <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="header__text-box row">
+      <div class="header__text">
+        <h1 class="heading-primary">
+          <!-- Replace the following name with your name -->
+          <span>Ronald Andrew Panganiban</span>
+        </h1>
+        <!-- Put a small paragraph about yourself -->
+        <p>A Web Developer based in Cabanatuan City.</p>
+        <a href="#contact" class="btn btn--pink">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main role="main">
+
+    <!-- ***** Work ***** -->
+
+    <section class="work" id="work">
+      <div class="row">
+        <h2>My Projects</h2>
+        <div class="work__boxes">
+
+          <!-- Each div with the work__box class is a project. -->
+
+          <div class="work__box">
+            <div class="work__text">
+              <h3>School Clinic Management System v1.0</h3>
+              <p>
+                Contributed to School Clinic Management System, a comprehensive software solution designed 
+                to streamline the administrative and medical processes within educational institutions' health facilities.
+                 It serves as a centralized platform for managing student health records, appointments, medications, and overall clinic operations. 
+              </p>
+              <ul class="work__list">
+                <li>HTML</li>
+                <li>SCSS</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+                <li>Bootsrap</li>
+              </ul>
+
+              <div class="work__links">
+                <a href="#" target="_blank" class="link__text">
+                  Visit Site <span>&rarr;</span>
+                </a>
+                <a href="https://github.com/Schwerts/portfolio" title="View Source Code" target="_blank">
+                  <img src="./images/github.svg" class="work__code" alt="GitHub">
+                </a>
+              </div>
+            </div>
+            <div class="work__image-box">
+              <img src="./images/SCMS.jpg" class="work__image" alt="Project 1" />
+            </div>
+          </div>
+
+
+     <!-- ***** Educational Background ***** -->
+
+     <section class="educ" id="educ">
+      <div class="row">
+          <h2>Educational Certificates</h2>
+          <div class="educ__content">
+            <div class="educ__folder" onclick="toggleCertificates()">Click to view certificates</div>
+            <div class="educ__certificates" style="display: none;">
+              <div class="educ__certificate">
+                  <!-- Certificate 1 -->
+                  <img class="educ__certificate-img" src="./images/cert1.jpg" alt="Certificate 1">
+              </div>
+              <div class="educ__certificate">
+                  <!-- Certificate 2 -->
+                  <img class="educ__certificate-img" src="./images/cert2.jpg" alt="Certificate 2">
+              </div>
+              <div class="educ__certificate">
+                  <!-- Certificate 3 -->
+                  <img class="educ__certificate-img" src="./images/cert3.jpg" alt="Certificate 3">
+              </div>
+              <div class="educ__certificate">
+                  <!-- Certificate 4 -->
+                  <img class="educ__certificate-img" src="./images/cert3.jpg" alt="Certificate 4">
+              </div>
+              <div class="educ__certificate">
+                  <!-- Certificate 5 -->
+                  <img class="educ__certificate-img" src="./images/cert4.jpg" alt="Certificate 5">
+              </div>
+          </div>
+      </div>
+  </section>
+
+
+    <!-- ***** Skills ***** -->
+
+    <section class="skills" id="skills">
+      <div class="row">
+        <h2>Skills</h2>
+        <div class="skills__content">
+          <div class="skills__column">
+            <div class="skills__category">
+              <ul class="skills__list">
+                <li>Sketch</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+                <li>Information Architecture</li>
+                <li>Usability Testing</li>
+              </ul>
+            </div>
+          </div>
+          <div class="skills__column">
+            <div class="skills__category">
+              <ul class="skills__list">
+                <li>Web Development</li>
+                <li>Programing Languages</li>
+                <li>Cyber Security</li>
+                <li>Cloud Technologies</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ***** About ***** -->
+
+    <section class="about" id="about">
+      <div class="row">
+        <h2>About Me</h2>
+        <div class="about__content">
+          <div class="about__text">
+            <!-- Replace the below paragraph with info about yourself -->
+            <p>
+              I'm Andrew, a passionate IT student fascinated by the ever-evolving world of technology. From coding to 
+              cybersecurity, I'm constantly exploring new areas and honing my skills to become a versatile IT 
+              professional. With a knack for problem-solving and a love for innovation, I'm eager to contribute my 
+              enthusiasm and expertise to the exciting challenges ahead in the tech industry.
+            </p>
+            <!-- Provide a link to your resume -->
+            <a href="#" class="btn">My Resume</a>
+          </div>
+
+          <div class="about__photo-container">
+            <!-- Add a nice photo of yourself -->
+            <img class="about__photo" src="./images/syed-ali-hussnain.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ***** Contact ***** -->
+
+  <section class="contact" id="contact">
+    <div class="row">
+      <h2>Get in Touch</h2>
+      <div class="contact__info">
+        <p>
+          Got a tech question, project idea, or just want to geek out about the latest trends? Let's connect! Whether
+          you're a fellow IT enthusiast, a potential collaborator, or just curious about all tech things, I'm always up
+          for a chat. Drop me a message and let's explore the endless possibilities of technology together!
+        </p>
+        <!-- Replace the email with yours -->
+        <a href="ronaldandrewpanganiban@gmail.com" class="btn">ronaldandrewpanganiban@gmail.com</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://www.facebook.com/ronaldandrew.panganiban" title="Link to Facebook Profile">
+            <img src="./images/Facebook.svg" class="footer__social-image" alt="Facebook">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://github.com/Schwerts" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="ronaldandrewpanganiban@gmail.com" title="Link to Google Mail">
+            <img src="./images/gmail.svg" class="footer__social-image" alt="Gmail">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/ronald-andrew-panganiban-644944306/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+      <!-- If you give me some credit by keeping the below paragraph, will be huge for me 😊 Thanks. -->
+      <p>
+        &copy; 2020 - Template designed & developed by <a href="https://nisar.dev" class="link">Nisar</a>.
+      </p>
+      <div class="footer__github-buttons">
+        <iframe
+          src="https://ghbtns.com/github-btn.html?user=nisarhassan12&repo=portfolio-template&type=watch&count=true"
+          frameborder="0" scrolling="0" width="170" height="20" title="Watch Portfolio Template on GitHub">
+        </iframe>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
+<script>
+  function toggleCertificates() {
+    var certificates = document.querySelector('.educ__certificates');
+    if (certificates.style.display === "none") {
+        certificates.style.display = "block";
+    } else {
+        certificates.style.display = "none";
+    }
+  }
+  </script>
